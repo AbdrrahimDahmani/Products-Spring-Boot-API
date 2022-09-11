@@ -10,13 +10,20 @@ public class Product {
     private Integer id;
     private String name;
     private float price;
-
+    private String image;
     public Product() {
     }
 
-    public Product(String name, float price) {
+    public Product(String name, float price,String image) {
         this.setName(name);
         this.setPrice(price);
+        this.setImage(image);
+    }
+    public String getImage(){
+        return image;
+    }
+    public void setImage(String image){
+        this.image=image;
     }
     public Integer getId() {
         return id;
